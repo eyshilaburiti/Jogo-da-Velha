@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+p{
+    float: left;
+    margin-right: 10px;
+}
+
+body{
+    background-color: #FFBF18;
+}
+
+header{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font: 400 20px "Roboto", sans-serif;
+    text-align: center;
+    color: #AD0003;
+}
+
+#menu{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 160px;
+    height: 35px;
+
+    font: 600 14px "Roboto", sans-serif;
+    text-align: center;
+    color: #AD0003;
+    border: 2px #AD0003 solid;
+    border-radius: 15px;
+}
+
+.quadro{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.celula{
+    /*Dimensões*/
+    width: 100px;
+    height: 80px;
+    
+    /*Configurações da borda*/
+    border: 2px black solid;
+    border-top: none;
+    border-right: none;
+
+    /*Configurações: disposição das imagens*/
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*Selecionando os elementos e aplicando a remoção*/ 
+.celula:nth-child(3n + 1){
+    border-left: none;
+}
+
+/*Selecionando os elementos e aplicando a remoção*/ 
+.celula:nth-child(n + 7){
+    border-bottom: none;
+}
+
+.opcao{
+    height: 50px;
+}
+
+.mensagem{
+    float: left;
+    margin: auto;
+    margin-left: 560px;
+    margin-right: 15px;
+    margin-top: 40px;
+    font: 600 15px "Roboto", sans-serif;
+    text-align: center;
+    color: #AD0003;
+}
+
+#botao{
+    margin-top: 35px;
+    text-align: center;
+    font: 400 15px "Roboto", sans-serif;
+    color: white;
+    background-color: #AD0003;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+}
+
+#botao:hover{
+    margin-top: 35px;
+    text-align: center;
+    font: 400 15px "Roboto", sans-serif;
+    color: white;
+    background-color: #cc1518;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+}
+
